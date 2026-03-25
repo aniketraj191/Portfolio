@@ -1033,7 +1033,7 @@
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
-            <a href="#" class="resume-btn" id="downloadCV">
+            <a href="assets/Aniket_Raj_CV.pdf" class="resume-btn" id="downloadCV" download="Aniket_Raj_CV.pdf" target="_blank">
                 <i class="fas fa-download"></i> CV
             </a>
         </div>
@@ -1425,8 +1425,8 @@
         document.getElementById('downloadCV').addEventListener('click', function(e) {
             e.preventDefault();
             var link = document.createElement('a');
-            link.href = 'assets/Aniket Raj_cv.pdf';
-            link.download = 'Aniket Raj_cv.pdf';
+            link.href = 'assets/Aniket_Raj_CV.pdf';
+            link.download = 'Aniket_Raj_CV.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
